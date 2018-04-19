@@ -18,7 +18,7 @@
   "author": "David Trejo",
   "license": "MIT",
   "dependencies": {
-    "request": "~2.81",
+    "node-fetch": "^2.1.2",
     "underscore": "~1.8"
   },
   "preferGlobal": true,
