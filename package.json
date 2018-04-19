@@ -2,9 +2,13 @@
   "name": "authors",
   "version": "0.0.0",
   "description": "print a markdown list of authors/contributors to your git repo, including github usernames",
+  "bin": {
+    "authors": "./bin/authors"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "lint": "eslint \"*.{js,mjs}\" \"lib/**/*.{js,mjs}\"",
+    "test": "npm run lint"
   },
   "keywords": [
     "github",
@@ -17,23 +21,33 @@
   ],
   "author": "David Trejo",
   "license": "MIT",
+  "preferGlobal": true,
+  "lint-staged": {
+    "*.{js,mjs,json,css}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "dependencies": {
     "node-fetch": "^2.1.2"
   },
-  "preferGlobal": true,
-  "bin": {
-    "authors": "./bin/authors"
-  },
   "devDependencies": {
-    "standard": "^8"
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.1.0",
+    "lint-staged": "^7.0.4",
+    "prettier": "^1.9.0"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/DTrejo/node-authors.git"
-  },
-  "standard": {
-    "env": [
-      "node"
-    ]
   }
 }
