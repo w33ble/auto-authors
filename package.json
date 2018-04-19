@@ -9,6 +9,7 @@
   "scripts": {
     "lint": "eslint \"*.{js,mjs}\" \"src/**/*.{js,mjs}\"",
     "authors": "node ./bin/authors",
+    "version": "npm run authors && git add AUTHORS.md",
     "test": "npm run lint"
   },
   "keywords": [
