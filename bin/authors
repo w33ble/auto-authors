@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-var authors = require('../').authors
-var dir = process.cwd()
-var print = true
-authors(dir, print)
+const { authors } = require('../');
+
+authors().then(a => console.log(a));
