@@ -1,7 +1,7 @@
 {
-  "name": "authors",
+  "name": "auto-authors",
   "version": "0.0.0",
-  "description": "print a markdown list of authors/contributors to your git repo, including github usernames",
+  "description": "Command line tool for generating a list of authors from git commit history and github",
   "bin": {
     "auto-authors": "./bin/authors"
   },
@@ -20,9 +20,8 @@
     "contributors",
     "project"
   ],
-  "author": "David Trejo",
+  "author": "Joe Fleming (https://github.com/w33ble)",
   "license": "MIT",
-  "preferGlobal": true,
   "lint-staged": {
     "*.{js,mjs,json,css}": [
       "prettier --write"
@@ -51,6 +50,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/DTrejo/node-authors.git"
+    "url": "git://github.com/w33ble/auto-authors.git"
   }
 }
