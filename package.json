@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "description": "print a markdown list of authors/contributors to your git repo, including github usernames",
   "bin": {
-    "authors": "./bin/authors"
+    "auto-authors": "./bin/authors"
   },
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint \"*.{js,mjs}\" \"src/**/*.{js,mjs}\"",
+    "authors": "node ./bin/authors",
     "test": "npm run lint"
   },
   "keywords": [
@@ -34,6 +35,7 @@
   },
   "dependencies": {
     "handlebars": "^4.0.11",
+    "mri": "^1.1.0",
     "node-fetch": "^2.1.2"
   },
   "devDependencies": {

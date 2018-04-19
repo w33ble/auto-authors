@@ -1,6 +1,47 @@
 #!/usr/bin/env node
+
+/* eslint no-console: 0 */
+
+const { writeFileSync } = require('fs');
+const mri = require('mri');
 const { githubAuthors } = require('../');
 const compileTemplate = require('../src/template');
+const pkg = require('../package.json');
 
-githubAuthors().then(a => compileTemplate('compact', { authors: a }))
-.then(out => console.log(out))
+const args = mri(process.argv.slice(2), {
+  boolean: ['help', 'version'],
+  alias: {
+    version: ['v'],
+    template: ['t'],
+    output: ['o'],
+  },
+  default: {
+    template: 'compact',
+    output: 'AUTHORS.md',
+  },
+});
+
+if (args.help) {
+  console.log(`Usage: auto-authors [options]
+
+Options:
+   -t, --template   Template to use, short name or path to custom template (default: compact)
+   -o, --output     File to write the authors output to (default: AUTHORS.md)
+   -v, --version    Show the package version
+   -h, --help       Show this message
+   `);
+  return;
+}
+
+if (args.version) {
+  console.log(`v${pkg.version}`);
+  return;
+}
+
+const template = Array.isArray(args.template) ? args.template[0] : args.template;
+const output = Array.isArray(args.output) ? args.output[0] : args.output;
+
+return githubAuthors()
+  .then(a => compileTemplate(template, { authors: a }))
+  .then(out => writeFileSync(output, out, 'utf8'))
+  .catch(err => console.error(err));
