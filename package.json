@@ -19,8 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "request": "~2.81",
-    "underscore": "~1.8",
-    "async": "~2.3"
+    "underscore": "~1.8"
   },
   "preferGlobal": true,
   "bin": {
