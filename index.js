@@ -1,1 +1,1 @@
-module.exports = require('./lib/authors.js')
+module.exports = require('./lib/authors.js');
