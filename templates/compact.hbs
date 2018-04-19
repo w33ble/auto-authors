@@ -1,0 +1,9 @@
+### Authors
+
+{{#each authors}}
+  {{#if username}}
+    - {{name}} ([{{username}}](https://github.com/{{username}}))
+  {{else}}
+    - {{name}}
+  {{/if}}
+{{/each}}

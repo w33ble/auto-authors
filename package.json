@@ -33,6 +33,7 @@
     "trailingComma": "es5"
   },
   "dependencies": {
+    "handlebars": "^4.0.11",
     "node-fetch": "^2.1.2"
   },
   "devDependencies": {

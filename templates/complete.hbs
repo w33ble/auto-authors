@@ -1,0 +1,17 @@
+### Authors
+
+{{#each authors}}
+  {{#if email}}
+    {{#if username}}
+      - {{name}} <{{email}}> ([{{username}}](https://github.com/{{username}}))
+    {{else}}
+      - {{name}} <{{email}}>
+    {{/if}}
+  {{else}}
+    {{#if username}}
+      - {{name}} ([{{username}}](https://github.com/{{username}}))
+    {{else}}
+      - {{name}}
+    {{/if}}
+  {{/if}}
+{{/each}}

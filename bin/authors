@@ -1,4 +1,6 @@
 #!/usr/bin/env node
 const { githubAuthors } = require('../');
+const compileTemplate = require('../src/template');
 
-githubAuthors().then(a => console.log(a));
+githubAuthors().then(a => compileTemplate('compact', { authors: a }))
+.then(out => console.log(out))
