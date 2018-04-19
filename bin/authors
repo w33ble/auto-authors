@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-const { authors } = require('../');
+const { githubAuthors } = require('../');
 
-authors().then(a => console.log(a));
+githubAuthors().then(a => console.log(a));

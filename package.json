@@ -5,9 +5,9 @@
   "bin": {
     "authors": "./bin/authors"
   },
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "lint": "eslint \"*.{js,mjs}\" \"lib/**/*.{js,mjs}\"",
+    "lint": "eslint \"*.{js,mjs}\" \"src/**/*.{js,mjs}\"",
     "test": "npm run lint"
   },
   "keywords": [
