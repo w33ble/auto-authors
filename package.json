@@ -1,6 +1,6 @@
 {
   "name": "auto-authors",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Command line tool for generating a list of authors from git commit history and github",
   "bin": {
     "auto-authors": "./bin/authors"

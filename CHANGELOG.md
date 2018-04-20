@@ -1,5 +1,9 @@
 ### Changelog
 
+#### [v0.1.1](https://github.com/w33ble/auto-authors/compare/v0.1.0...v0.1.1) (19 April 2018)
+- docs: add note about automatic generation [`33ba2cb`](https://github.com/w33ble/auto-authors/commit/33ba2cbcbc404b8e7c37df268ceaeb26a70e9d56)
+- fix: template path [`9c79f61`](https://github.com/w33ble/auto-authors/commit/9c79f61bdbe95052d27a91db8f58e8cd1ab0586a)
+
 #### v0.1.0 (19 April 2018)
 - fixed #6 [`#6`](https://github.com/w33ble/auto-authors/issues/6)
 - feat: complete auto-authors cli [`d4ed7c9`](https://github.com/w33ble/auto-authors/commit/d4ed7c9e5e83770502e9cbbd665974a4febd2123)
