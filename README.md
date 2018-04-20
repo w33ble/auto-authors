@@ -47,6 +47,18 @@ $ OAUTH_TOKEN=b2935592ba8667b668d4a433162bc3d2b96e9e1b auto-authors
 
 You can create and revoke  [personal access tokens in your account settings](https://github.com/settings/tokens). For this use case no special permissions are required, so `public access` is sufficient.
 
+#### Automatic authors generation
+
+Running the script as part of the npm publishing workflow can automatically update the authors list. The simplest way to do this is via the `version` [npm script](https://docs.npmjs.com/misc/scripts).
+
+```json
+"scripts": {
+  "version": "auto-authors && git add AUTHORS.md"
+}
+```
+
+Now when you use `npm version` to increment your package's version, the updated authors file will be committed with the version commit. Adjust that command as needed based on your desired template and output file.
+
 ## Programmatic Usage
 
 If you'd like to use this module in node, it exports 3 methods, all of which return promises:
