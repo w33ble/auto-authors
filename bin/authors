@@ -4,12 +4,13 @@
 
 const { writeFileSync } = require('fs');
 const mri = require('mri');
+const help = require('mri-help');
 const { githubAuthors } = require('../');
 const compileTemplate = require('../src/template');
 const pkg = require('../package.json');
 
-const args = mri(process.argv.slice(2), {
-  boolean: ['help', 'version'],
+const mriConfig = {
+  boolean: ['version'],
   alias: {
     version: ['v'],
     template: ['t'],
@@ -19,19 +20,14 @@ const args = mri(process.argv.slice(2), {
     template: 'compact',
     output: 'AUTHORS.md',
   },
-});
+  help: {
+    '@command': 'auto-authors',
+    template: 'Template to use, short name or path to custom template',
+    output: 'File to write the authors output to',
+  }
+};
 
-if (args.help) {
-  console.log(`Usage: auto-authors [options]
-
-Options:
-   -t, --template   Template to use, short name or path to custom template (default: compact)
-   -o, --output     File to write the authors output to (default: AUTHORS.md)
-   -v, --version    Show the package version
-   -h, --help       Show this message
-   `);
-  return;
-}
+const args = mri(process.argv.slice(2), help(mriConfig));
 
 if (args.version) {
   console.log(`v${pkg.version}`);

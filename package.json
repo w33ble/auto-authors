@@ -50,6 +50,7 @@
   "dependencies": {
     "handlebars": "^4.0.11",
     "mri": "^1.1.0",
+    "mri-help": "^0.1.0",
     "node-fetch": "^2.1.2"
   },
   "devDependencies": {
