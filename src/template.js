@@ -2,6 +2,8 @@ const { readFile } = require('fs');
 const { join } = require('path');
 const Handlebars = require('handlebars');
 
+const templateDir = join(__dirname, '..', 'templates');
+
 function removeIndentation(string) {
   return string.replace(/\n +/g, '\n').replace(/^ +/, '');
 }
@@ -11,7 +13,7 @@ function getTemplate(template, cb) {
   readFile(template, 'utf8', (err, content) => {
     if (err) {
       // no match, attempt to load provided templates
-      const templatePath = join('templates', `${template}.hbs`);
+      const templatePath = join(templateDir, `${template}.hbs`);
       readFile(templatePath, 'utf8', cb);
       return;
     }
