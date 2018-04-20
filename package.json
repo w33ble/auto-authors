@@ -23,6 +23,14 @@
   ],
   "author": "Joe Fleming (https://github.com/w33ble)",
   "license": "MIT",
+  "files": [
+    "bin",
+    "src",
+    "templates",
+    "CHANGELOG.md",
+    "AUTHORS.md",
+    "LICENSE"
+  ],
   "lint-staged": {
     "*.{js,mjs,json,css}": [
       "prettier --write"
