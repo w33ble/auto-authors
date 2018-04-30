@@ -1,6 +1,6 @@
 {
   "name": "auto-authors",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Command line tool for generating a list of authors from git commit history and github",
   "bin": {
     "auto-authors": "./bin/authors"
@@ -33,8 +33,12 @@
     "LICENSE"
   ],
   "lint-staged": {
-    "*.{mjs,js}": ["eslint --fix"],
-    "*.{mjs,js,json,css}": ["prettier --write"]
+    "*.{mjs,js}": [
+      "eslint --fix"
+    ],
+    "*.{mjs,js,json,css}": [
+      "prettier --write"
+    ]
   },
   "prettier": {
     "printWidth": 100,

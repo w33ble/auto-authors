@@ -1,5 +1,10 @@
 ### Changelog
 
+#### [v0.1.2](https://github.com/w33ble/auto-authors/compare/v0.1.1...v0.1.2) (30 April 2018)
+- fix: cli can&#x27;t return outside of a function [`189fdb4`](https://github.com/w33ble/auto-authors/commit/189fdb4433f69340fe9fa33afbb68c539ea79415)
+- docs: mark project as stable [`bb96890`](https://github.com/w33ble/auto-authors/commit/bb96890a41255c1e9c366664ac286ccf56a5eeb3)
+- docs: state default behavior in usage info [`fc48ec1`](https://github.com/w33ble/auto-authors/commit/fc48ec1d0f2c80e2e92f7bb50d8eb22af5d950a9)
+
 #### [v0.1.1](https://github.com/w33ble/auto-authors/compare/v0.1.0...v0.1.1) (19 April 2018)
 - docs: add note about automatic generation [`33ba2cb`](https://github.com/w33ble/auto-authors/commit/33ba2cbcbc404b8e7c37df268ceaeb26a70e9d56)
 - fix: template path [`9c79f61`](https://github.com/w33ble/auto-authors/commit/9c79f61bdbe95052d27a91db8f58e8cd1ab0586a)
