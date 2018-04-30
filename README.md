@@ -7,7 +7,7 @@ Created in the spirit of [auto-changelog](https://github.com/CookPete/auto-chang
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/w33ble/auto-authors/master/LICENSE)
 [![Build Status](https://img.shields.io/travis/w33ble/auto-authors.svg?branch=master)](https://travis-ci.org/w33ble/auto-authors)
 [![npm](https://img.shields.io/npm/v/auto-authors.svg)](https://www.npmjs.com/package/auto-authors)
-[![Project Status](https://img.shields.io/badge/status-experimental-orange.svg)](https://nodejs.org/api/documentation.html#documentation_stability_index)
+[![Project Status](https://img.shields.io/badge/status-stable-brightgreen.svg)](https://nodejs.org/api/documentation.html#documentation_stability_index)
 
 ## Installation
 
