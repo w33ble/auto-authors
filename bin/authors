@@ -22,6 +22,7 @@ const mriConfig = {
   },
   help: {
     '@command': 'auto-authors',
+    '@description': pkg.description,
     template: 'Template to use, short name or path to custom template',
     output: 'File to write the authors output to',
   },
