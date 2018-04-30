@@ -27,6 +27,8 @@ $ npm install -g auto-authors
 $ auto-authors 
 ```
 
+This will create a `AUTHORS.md` file with all authors of a given repo, in the order of contribution, using the `compact` template.
+
 #### Options
 
 `auto-authors` can also take some argument, which you can use to control its output. You can use `--help` to see this list as well.
