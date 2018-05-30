@@ -33,12 +33,17 @@
     "LICENSE"
   ],
   "lint-staged": {
-    "*.{mjs,js}": [
-      "eslint --fix"
+    "ignore": [
+      "package.json"
     ],
-    "*.{mjs,js,json,css}": [
-      "prettier --write"
-    ]
+    "linters": {
+      "*.{js,mjs}": [
+        "eslint --fix"
+      ],
+      "*.{js,mjs,json,css}": [
+        "prettier --write"
+      ]
+    }
   },
   "prettier": {
     "printWidth": 100,
