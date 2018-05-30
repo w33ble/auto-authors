@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "eslint \"*.{js,mjs}\" \"src/**/*.{js,mjs}\"",
     "authors": "node ./bin/authors",
-    "version": "auto-changelog -p && npm run authors && git add CHANGELOG.md AUTHORS.md",
+    "version": "npm-auto-version",
     "precommit": "lint-staged",
     "test": "npm run lint"
   },
@@ -50,12 +50,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "auto-changelog": {
-    "output": "CHANGELOG.md",
-    "template": ".changelog_template.hbs",
-    "ignoreCommitPattern": "(chore|test):",
-    "commitLimit": false
-  },
   "dependencies": {
     "handlebars": "^4.0.11",
     "mri": "^1.1.0",
@@ -63,7 +57,7 @@
     "node-fetch": "^2.1.2"
   },
   "devDependencies": {
-    "auto-changelog": "^1.4.6",
+    "@w33ble/npm-auto-tools": "*",
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",

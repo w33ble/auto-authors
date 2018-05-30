@@ -5,7 +5,7 @@
 - docs: mark project as stable [`bb96890`](https://github.com/w33ble/auto-authors/commit/bb96890a41255c1e9c366664ac286ccf56a5eeb3)
 - docs: state default behavior in usage info [`fc48ec1`](https://github.com/w33ble/auto-authors/commit/fc48ec1d0f2c80e2e92f7bb50d8eb22af5d950a9)
 
-#### [v0.1.1](https://github.com/w33ble/auto-authors/compare/v0.1.0...v0.1.1) (19 April 2018)
+#### [v0.1.1](https://github.com/w33ble/auto-authors/compare/v0.1.0...v0.1.1) (20 April 2018)
 - docs: add note about automatic generation [`33ba2cb`](https://github.com/w33ble/auto-authors/commit/33ba2cbcbc404b8e7c37df268ceaeb26a70e9d56)
 - fix: template path [`9c79f61`](https://github.com/w33ble/auto-authors/commit/9c79f61bdbe95052d27a91db8f58e8cd1ab0586a)
 
@@ -13,8 +13,8 @@
 - fixed #6 [`#6`](https://github.com/w33ble/auto-authors/issues/6)
 - feat: complete auto-authors cli [`d4ed7c9`](https://github.com/w33ble/auto-authors/commit/d4ed7c9e5e83770502e9cbbd665974a4febd2123)
 - feat: add handlebars output support [`46cf6a2`](https://github.com/w33ble/auto-authors/commit/46cf6a221757ce3c8df1341247d9022867c75164)
-- feat: switch to object output [`d18bd11`](https://github.com/w33ble/auto-authors/commit/d18bd117f67fc57e8e4e83450d18a6db564e50e0)
-- feat: switch to a full promise api [`2ef5a8e`](https://github.com/w33ble/auto-authors/commit/2ef5a8eb692de728fe3deb6bce117ed90691fc49)
+- **Breaking:** feat: switch to object output [`d18bd11`](https://github.com/w33ble/auto-authors/commit/d18bd117f67fc57e8e4e83450d18a6db564e50e0)
+- **Breaking:** feat: switch to a full promise api [`2ef5a8e`](https://github.com/w33ble/auto-authors/commit/2ef5a8eb692de728fe3deb6bce117ed90691fc49)
 - Provide warning and hint on OAUTH_TOKEN [`a320e6e`](https://github.com/w33ble/auto-authors/commit/a320e6e272479b32acd9a7d5080e18ec13adc3a6)
 - Pass OAUTH_TOKEN to headers [`7625c95`](https://github.com/w33ble/auto-authors/commit/7625c9578726e7a8e091014181135fe0c04f6939)
 - Warn if rate limit was exceeded [`4aafee3`](https://github.com/w33ble/auto-authors/commit/4aafee31c92a66c9d0bebd5cad47abd5bc6557e1)
