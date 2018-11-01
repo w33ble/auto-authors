@@ -42,5 +42,8 @@ const mriConfig = {
   githubAuthors()
     .then(a => compileTemplate(template, { authors: a }))
     .then(out => writeFileSync(output, out, 'utf8'))
-    .catch(err => console.error(err));
+    .catch(err => {
+      console.error(err);
+      process.exit(1);
+    });
 })();
