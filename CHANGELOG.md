@@ -1,5 +1,8 @@
 ### Changelog
 
+#### [v0.1.3](https://github.com/w33ble/auto-authors/compare/v0.1.2...v0.1.3) (1 November 2018)
+- fix: correctly catch ratelimit failures [`7c52c34`](https://github.com/w33ble/auto-authors/commit/7c52c340aafda36e714c7a513e644543750f5f9b)
+
 #### [v0.1.2](https://github.com/w33ble/auto-authors/compare/v0.1.1...v0.1.2) (30 April 2018)
 - fix: cli can&#x27;t return outside of a function [`189fdb4`](https://github.com/w33ble/auto-authors/commit/189fdb4433f69340fe9fa33afbb68c539ea79415)
 - docs: mark project as stable [`bb96890`](https://github.com/w33ble/auto-authors/commit/bb96890a41255c1e9c366664ac286ccf56a5eeb3)
