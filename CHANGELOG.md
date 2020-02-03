@@ -1,5 +1,10 @@
 ### Changelog
 
+#### [v0.1.5](https://github.com/w33ble/auto-authors/compare/v0.1.4...v0.1.5) (3 February 2020)
+
+#### [v0.1.4](https://github.com/w33ble/auto-authors/compare/v0.1.3...v0.1.4) (1 November 2018)
+- fix: error code on cli failure [`ac2efbc`](https://github.com/w33ble/auto-authors/commit/ac2efbcd6e01573df80158edd23e9d3f15c3e240)
+
 #### [v0.1.3](https://github.com/w33ble/auto-authors/compare/v0.1.2...v0.1.3) (1 November 2018)
 - fix: correctly catch ratelimit failures [`7c52c34`](https://github.com/w33ble/auto-authors/commit/7c52c340aafda36e714c7a513e644543750f5f9b)
 
@@ -42,4 +47,3 @@
 - ignore node_modules [`7885d09`](https://github.com/w33ble/auto-authors/commit/7885d0912a8b015e6f4cc269971553a6ef23f078)
 - it works! [`4f93e89`](https://github.com/w33ble/auto-authors/commit/4f93e89c776bb648d1d9624b14ec5cab0df06515)
 - Initial commit [`fc55af7`](https://github.com/w33ble/auto-authors/commit/fc55af7b3c757f8c2fe957b4c5164c9f428f33c1)
-
